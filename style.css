@@ -227,6 +227,7 @@ li{
     flex-direction: column;
     justify-content: center;
     align-items:center;
+
   }
   
   #front{
@@ -234,26 +235,35 @@ li{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 4rem;
+    gap: 1rem;
     align-items: center;
-    height: 72vh;
+    height: 26rem;
+    width: 20rem;
   }
   #Education{
-    height: 40vh;
+    display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     margin-top: 1.5rem;
+    height: 15rem;
   }
   .skills{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 1.5rem;
     height: 20vh;
     justify-content: flex-start;
     align-items: flex-start;
     margin-top: 1.5rem;
   }
   .footer{
-    margin-top: 1.5rem;
+    margin-top: 5rem;
     justify-content: flex-start;
     align-items: flex-start;
+    gap: 0px;
   }
-
+p{
+  gap: 0px;
+}
 }
