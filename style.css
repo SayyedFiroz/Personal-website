@@ -27,15 +27,13 @@ width: 100%;
 }
 }
 
-
-
-h2,h3,h4{
+h2{
   background-color: #0096FF;
   color: whitesmoke;
   text-align: center;
   border-radius: 5%;
   width:100vw;
-  margin-top: 0%;
+  margin-bottom: 1rem;
 }
 
 span{
@@ -79,9 +77,16 @@ align-items: center;
 }
 #Education{
 height: 30vh;
+margin-bottom: 2rem;
+}
+.work{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .skills{
 height: 25vh;
+margin-top: 2rem;
+margin-bottom: 2rem;
 }
 
 
@@ -212,58 +217,61 @@ li{
 }
 
 @media (min-width:320px) and (max-width:1400px) {
-  .box{
+ 
+  h2,h3,h4,h5{
+    background-color: #0096FF;
+    color: whitesmoke;
+    text-align: center;
+    border-radius: 5%;
+    width:100vw;
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+  }
+    .box{
     display: flex;
     flex-direction: column;
     justify-content:flex-end;
     align-items: center;
-    margin-left:3.5rem ;
+    margin-left:3rem ;
+
   }
   .fcontent{
     margin-bottom: 10px;
+    margin-left: 2.5rem;
   }
   .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
-
   }
   
   #front{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
-    gap: 1rem;
-    align-items: center;
-    height: 26rem;
-    width: 20rem;
+    gap: 2rem;
+    align-items: flex-start;
+    height: 30vh;
   }
   #Education{
-    display: flex;
+    height: 16vh;
     justify-content: flex-start;
     align-items: flex-start;
     margin-top: 1.5rem;
-    height: 15rem;
   }
   .skills{
-    display: flex;
+    height: 14vh;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-top: 1.5rem;
-    height: 20vh;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
+  }
   }
   .footer{
-    margin-top: 5rem;
+    margin-top: 2rem;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 0px;
   }
-p{
-  gap: 0px;
-}
+
 }
