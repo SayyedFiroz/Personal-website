@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="En">
     <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <meta charset="UTF-8">
         <title> ▶️ Sayyed's Personal Website </title>
         <link rel="stylesheet" href="./style.css" />
-
     </head>
     
-    <body >
+    <body>
          <div class="container" id="front">
             <div class="box img-effect">
                 <div class="content">
                     <img src="./images/prof-img.jpg" alt="prof images"/>
                     <h2 id="img-content">Sayyed Firoz <br><span>Software Developer</h2>
                  </div>       
-            </div>
+                </div>
             <div class="fcontent">
                     <h1>Sayyed Firoz</h1>
                         <p>I am a freelancer at <strong>Upwork</strong></p>
                         <p>I am<span> Software and Web Developer.</span>
                         <p>I ❤️Coffee and Clean code.</p>
             </div>
+            <button> <img  class="icon" src="images/lighticon.png" alt="lighticon"></button>
          </div>
 
 <div class="Education container" id="Education">
-        <h2 >Education</h2>
+        <h2>Education</h2>
         <ul>
         <li>S.S.C from <strong>  New Model English High School </strong> <em>(Mumbra)</em></li>
         <li>H.S.C from <strong>  Ramanand Arya D.A.V College </strong> <em>(Bhandup)</em></li>
@@ -84,7 +85,7 @@
 
 <div class="Hobbies conatiner">
         <h2>Hobbies</h2>
-                <ul type="square">
+                <ul>
                     <li><a class="linkss" href="https://github.com/SayyedFiroz">Programming</a></li>
                     <li><a class="linkss" href ="https://youtube.com/watch?v=snOQHSj5YAc&si=EnSIkaIECMiOmarE" >Gaming</a></li>
                     <li><a class="linkss" href ="reading.html">Reading</a></li>
@@ -96,6 +97,13 @@
         <a class="linkss"  href="contact.html">Contact Me</a>
     </p>
 </div>    
+
+<script>
+    $('button').on('click', function() {
+       $('html').css('color', 'black');
+       $('html').css('background', 'whitesmoke');
+    });
+ </script>
     </body>
 
     </html>
