@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <title> ▶️ Sayyed's Personal Website </title>
         <link rel="stylesheet" href="./style.css" />
+        <link href='https://fonts.googleapis.com/css?family=Cardo' rel='stylesheet'>
     </head>
     
     <body>
@@ -21,7 +22,7 @@
                         <p>I am<span> Software and Web Developer.</span>
                         <p>I ❤️Coffee and Clean code.</p>
             </div>
-            <button> <img  class="icon" src="images/lighticon.png" alt="lighticon"></button>
+            <button> <img  class="icon" src="images/whiteicon.png" alt="lighticon"></button>
          </div>
 
 <div class="Education container" id="Education">
@@ -36,7 +37,7 @@
 
 <div class="work conatiner"> 
     <h2>Work Experience</h2>
-        <table cellspacing="10">
+        <table cellspacing="12">
             <thead>
                 <tr>
                     <th>Date</th>
@@ -94,14 +95,19 @@
       
 <div class="footer container" id="footer">
     <p> 
-        <a class="linkss"  href="contact.html">Contact Me</a>
+        <a class="linkss contact"  href="contact.html"> Contact </a>
     </p>
 </div>    
 
 <script>
     $('button').on('click', function() {
        $('html').css('color', 'black');
-       $('html').css('background', 'whitesmoke');
+       $('html ').css('background', 'whitesmoke');
+       $('a').css('color', 'black');
+       $(".container>button>img").attr("src", "images/darkicon.png");
+       $('h2').css('color', 'black');
+
+
     });
  </script>
     </body>
