@@ -3,8 +3,7 @@ html{
   color: white;
   font-size: larger;
   font-family: 'cardo';
-  width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #0c0a0b;
 }
 button{
@@ -206,24 +205,28 @@ li{
 
 /*tab*/
 
-@media (max-width:650px)
+@media (max-width:480px)
 {
-  body{
-    margin: 0px;
-  }
   html{
     color: white;
     font-size: x-large;
     font-family: 'cardo';
-    height: 100%;
+    height: 100vh;
+    width: 100vh;
     background-color: #0c0a0b;
+  }
+  h1,span{
+    margin-top: 0px;
+    font-weight:bold ;
+    font-family: serif;
+
   }
   h2{
     background-color: #0096FF;
     color: whitesmoke;
     text-align: center;
     border-radius: 40px;
-    width: 100%;
+    width: 100vh;
     margin-top: 2rem;
     margin-bottom: 2.5rem;
   }
@@ -232,36 +235,49 @@ li{
     border-radius: 50%;
     border-color: black;
     display: flex;
-    flex-wrap: wrap-reverse;
     justify-content: center;
     align-items: center;
     align-self: flex-end;
-    margin: 2px;
+    order: -1;
+    margin: 0px;
+    position: relative;
+    left: 40px;
   }
+
   .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
     width: 100%;
+    height: 30vh;
+    margin: 0px;
   }
   #front{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 2rem;
     align-items: flex-start;
-    height: 30%;
+    align-self: flex-start;
+    height: 10%;
     width: 100%;
+
+    gap: 0;
   }
 
     .box{
     display: inline;
     flex-direction: column;
-    justify-content:flex-end;
+    justify-content:flex-start;
     align-items: center;
     margin-left:3rem ;
     background-color: #0096FF;
+    margin-top: 0%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    position: relative;
+    bottom: 2.2rem;
+
 
   }
   .fcontent{
@@ -272,14 +288,127 @@ li{
   #Education{
     justify-content: flex-start;
     align-items: flex-start;
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
     height: 30%;
     margin-right: 0px;
+    width: 100%;
   }
   .skills{
     justify-content: flex-start;
     align-items: flex-start;
     height: 30%;
+    width: 100%;
+  }
+  .footer{
+    margin-top: 2rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width:320px) and (max-width:767px) and (orientation:landscape)
+
+{
+  html{
+    color: white;
+    font-size: x-large;
+    font-family: 'cardo';
+    background-color: #0c0a0b;
+  }
+  body{
+    width: 100%;
+    height: 100vh;
+  }
+  h1,span{
+    margin-top: 0px;
+    font-weight:bold ;
+    font-family: serif;
+
+  }
+  h2{
+    background-color: #0096FF;
+    color: whitesmoke;
+    text-align: center;
+    border-radius: 40px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  p{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  button{
+    background-color: #0096FF;
+    border-radius: 50%;
+    border-color: black;
+    align-self: flex-end;
+    margin-left: 3rem;
+    margin-top: 0px;
+    order: 1;
+    margin-right: 0px;
+    height: 35px;
+    width: 35px;
+  }
+  .box{
+    display: inline;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    margin-left:1rem ;
+    background-color: #0096FF;
+    margin-top: 10rem;
+    border-radius: 50%;
+    position: relative;
+    bottom: 2.2rem;
+    width: 10rem;
+    height: 10rem;
+  }
+  #front{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap:nowrap;
+      gap:0px;
+      align-items: center;
+      width: fit-content;
+      margin-top: 2%; 
+  }
+  
+  .fcontent{
+    margin-bottom: 10px;
+    margin-left: 2rem;
+    margin-top: 6rem;
+    flex: 3;
+    font-size: medium;
+    width: 10rem;
+  }
+  
+  #Education{
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 6rem;
+    margin-right: 0px;
+    height: 55%;
+  }
+
+  .work{
+    margin-top: 9rem;
+    margin-bottom: 1rem;
+  }
+  .skills{
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 9rem;
   }
   .footer{
     margin-top: 2rem;
