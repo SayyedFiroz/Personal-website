@@ -93,7 +93,7 @@ margin-bottom: 2rem;
   margin-bottom:20px;
   text-decoration: dotted;
 }
-#hobbies{'
+#hobbies{
   margin-top: 0px;
   margin-bottom: 100px;
 }
@@ -107,7 +107,6 @@ margin-bottom: 2rem;
   border-radius: 40px;
   padding: 0.5rem;
   font-family: serif;
-  ma
 }
 @media (any-hover: hover) {
   .linkss:hover {
@@ -219,7 +218,7 @@ li{
   padding: 15px;
 }
 
-@media (min-width:320px) and (max-width:1400px) {
+@media (min-width:320px) and (max-width:680px) {
  
   h2,h3,h4,h5{
     background-color: #0096FF;
@@ -278,4 +277,3 @@ li{
     align-items: flex-start;
   }
 
-}
